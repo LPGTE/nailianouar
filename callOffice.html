@@ -62,55 +62,81 @@
 
   <!-- Contenu principal -->
   <main>
-  <!-- Header -->
-  <header class="masthead text-center text-white">
-    <div class="container px-4">
-      <img class="masthead-avatar rounded-circle mb-4" src="img/photo.png" alt="avatar">
-      <h1 class="masthead-heading text-uppercase">Naili Anouar</h1>
-      <p class="masthead-subheading font-weight-light mb-0">Développeur Web • Créatif • Freelance</p>
-    </div>
-  </header>
-
-  <!-- Portfolio Section -->
-  
-  <!-- 
-  <section id="portfolio" class="page-section bg-light">
-    <div class="container px-4">
-      <h2 class="text-center section-heading text-uppercase">Portfolio</h2>
-      <div class="row gx-4 gy-5 justify-content-center">
-        
-        <div class="col-md-6 col-lg-4">
-          <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/1.jpg" alt="Projet 1">
-          </div>
-          <div class="portfolio-caption text-center mt-3">
-            <div class="portfolio-caption-heading">Projet 1</div>
-            <div class="portfolio-caption-subheading text-muted">Catégorie</div>
-          </div>
-        </div>
-       
-      </div>
-    </div>
-  </section>
-  
-  -->
-  
+ 
  <!-- Section Description de Profil -->
  <section class="py-5 bg-light colorWhite" id="about">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-10">
-	<h2 class="fw-bold text-center mb-4 color1">À propos de moi</h2>
-	<p class="lead text-center text-muted mb-4 color1">
-	  Je suis un développeur web passionné par la création d'expériences numériques élégantes, performantes et accessibles. 
-	  Mon objectif est de transformer des idées en interfaces claires, modernes et intuitives.
+	
+	<h2 class="fw-bold text-center mb-4 color1">CallOffice</h2>
+	
+	<h2 class="fw-bold mb-4 color1">Présentation</h2>
+	<div class="text-center my-4">
+	 <a href="img/calloffice2.png"> 
+	   <img src="img/calloffice2.png" class="img-fluid" style="max-width: 300px;" alt="My image">	
+	 </a>
+	</div>
+        <p class="lead text-muted mb-4 color1">
+	Call Office est une solution destiné aux organismes qui gèrent des activités directes avec leurs clients. Elle sert à ordonner les tâches à travers la gestion automatique et vocale des appels clients.
 	</p>
-	<p class="text-center text-muted color1">
-	  Fort de compétences solides en HTML, CSS, JavaScript et frameworks modernes comme Bootstrap, je conçois des sites et applications web avec un sens aigu du détail et une attention particulière à l'ergonomie. Curieux, rigoureux et créatif, j'aime résoudre des problèmes techniques tout en gardant l'utilisateur au cœur de chaque projet.
+	
+	<p class="lead text-muted mb-4 color1">
+	L’application comprend différents modules necéssaires à son fonctionnement dont Services, Fenêtres, Utilisateurs et leurs affectations aux service, Méssages vocaux et Méssages préconfigurés, elle est paramétrable à travers des interfaces simplifiés et peut être utilisé par différents types d’organismes telque une Banque, un Poste ou une Mairie.
 	</p>
+	
+	<p class="lead text-muted mb-4 color1">
+	La solution est configurable pour utilisation avec différents thèmes (Blue,Bureau Blue, Dark),elle est aussi initialisé avec des voix par défaut pour les méssages et elle est équipé d’un utilitaire pour l’enregistrement personalisé des méssages dans le cas où l’utilisateur souhaite utiliser des méssages vocaux personalisés.
+	</p>
+	
+	<p class="lead text-muted mb-4 color1">
+	Elle est composé d’une application centrale (CallOffice Server) et deux applications clientes, une en vesion Desktop et une autre en version Mobile.
+	</p>
+	
+	<p class="lead text-muted mb-4 color1">
+	CallOffice Server
+
+Le sous application CallOffice Server est la partie serveur de la solution Call Office: elle a pour rôle la centralisation des flux de la solution en particulier les appels des clients, l’écran suivant shématise l’écran d’acceuil qui s’affichera sur le serveur et qui contient les principales fonctions exécutés par CallOffice dont: “Corriger Numéro”, “Numéro suivant”, “Numéro Précedent”, “Appeler Numéro”, “Appel Préconfiguré”
+	</p>
+
+	<div class="text-center my-4">
+	<a href="img/calloffice11.png">
+	  <img src="img/calloffice11.png" class="img-fluid" style="max-width: 300px;" alt="My image">
+	</a>
+	</div>
+	
+        <div class="text-center my-4">
+	<a href="img/calloffice1.png">
+	  <img src="img/calloffice1.png" class="img-fluid" style="max-width: 300px;" alt="My image">
+	</a>        
+
+	</div>
+	
+	<p class="lead text-muted mb-4 color1">
+	CallOffice Client (Version Desktop)
+
+	Le sous système CallOffice Client en version Desktop est déstiné aux utilisateurs qui exécutent des tâches directes avec les clients, elle contient les principales fonctions intégrés dans l’application serveur. Son fonctionnement se base sur la communication avec l’application serveur à travers un canal de communication basé sur le protocole Http d’où une connexion réseau est nécessaire pour le fonctionnement de l’application.
+	</p>	
+
+        <div class="text-center my-4">
+	 <a href="img/calloffice1.png">
+	  <img src="img/calloffice33.png" class="img-fluid" style="max-width: 300px;" alt="My image">
+	 </a>  
+	</div>
+	
+	<p class="lead text-muted mb-4 color1">
+	CallOffice Client (Version Mobile)
+
+	Le sous système CallOffice Client en sa version mobile est similaire à celle en version Desktop, elle contient la majorité des fonction intégrés dans l’application serveur. Dans sa version actuelle, elle est destiné aux smartphones équipés d’un système d’exploitation de type Ios et Android.
+	</p>
+
+        <div class="text-center my-4">
+
+	  <a href="img/mobil5.png">
+	   <img src="img/mobil5.png" class="img-fluid" style="max-width: 300px;" alt="My image">
+	  </a>  
+	</div>
+					
       </div>
     </div>
   </div>

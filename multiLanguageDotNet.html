@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Portfolio | Freelancer Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container px-4">
+     <div id="navbarResponsive" class="collapse navbar-collapse">
+        <ul class="navbar-nav ">
+          <!-- Menu avec sous-menu -->
+          <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+	  <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       A Propos
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="lpgte.html">LPGTE</a></li>
+	      <li><a class="dropdown-item" href="auteur.html">Auteur</a></li>
+	    </ul>
+	   </li>
+	   <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       Devs
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="presentation.html">Présentation</a></li>
+	      <li><a class="dropdown-item" href="callOffice.html">CallOffice</a></li>
+	      <li><a class="dropdown-item" href="stacksNotes.html">StacksNotes</a></li>
+	      <li><a class="dropdown-item" href="textRepeaterSpeech.html">TextRepeaterSpeach</a></li>
+	    </ul>
+	   </li>
+	   <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       Blogs
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="topVocabulary.html">Top Vocabulaires Utilisés</a></li>
+	      <li><a class="dropdown-item" href="IntellectualProperty.html">Les oeuvres et la propriété intellectuelle</a></li>
+	      <li><a class="dropdown-item" href="designPattern.html">Design Pattern</a></li>
+	      <li><a class="dropdown-item" href="projectManagement.html">Gestion des projets informatiques</a></li>
+	      <li><a class="dropdown-item" href="introductionHtml5.html">Introduction à Html5</a></li>
+	      <li><a class="dropdown-item" href="multiLanguageDotNet.html">Les Multi Langues en .Net</a></li>
+	    </ul>
+	   </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#page-top">LPGTE SOFTS</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+ 
+ <!-- Section Description de Profil -->
+ <section class="py-5 bg-light colorWhite" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+	<h2 class="fw-bold text-center mb-4 color1">Le Multilangues en .Net</h2>
+
+	<p><strong>1) Introduction</strong></p>
+
+
+
+	<p>
+	Le Multilangue dans une application informatique désigne la prise en 
+	charge des langues multiples pour une application particulière. 
+	Toutefois,chaque language de programmation offre une méthode spécifique 
+	pour metre en place cette fonctionalité.</p>
+
+
+
+	<p>Dans le framework .Net, le développement des application multilingue
+	 se passe par des fichiers de ressources et la manipulation de l&#8217;objet 
+	“CultureInfo”.</p>
+
+
+
+	<p>Dans ce qui suit une présentation Abrégée sur la mise en place de la
+	 fonctionalité “Multilanguage” dans les différents technologies .Net.</p>
+
+
+
+	<p><strong>2) Winforms</strong></p>
+
+
+
+	<ul class="wp-block-list"><li>  Créer un formulaire avec les controles nécessaires,</li><li>  Générer un fichier de ressource de fomulaire en cours pour chaque langue,</li><li>  Ajouter le suffixe 
+	de la langue au nom du formulaire, exemple si le nom du formulaire est 
+	“Form1” et qu&#8217;on veut créer un fichier de langue pour la langue Anglais,
+	 le fichier de ressource aura le nom “Form1.en.resx “ et on aura à la 
+	fin deux fichiers de ressources: Un fichier nommé “Form1.resx” pour la 
+	langue par défaut et un fichier “Form1.en.resx” pour la langue Anglais,</li><li>  Initialiser la langue à utiliser au démarrage de l&#8217;application:,</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+		
+	      string language = Properties.Settings.Default.Language;
+	<br>  language = Properties.Settings.Default.Language;
+	<br>  Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+		
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Rédémarrer l&#8217;application,</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+		
+	  Application.Restart();
+		
+	</td></tr></tbody></table></figure>
+
+
+
+	<p><strong>3) Wpf</strong></p>
+
+
+
+	<p>
+	La gestion de la Multilingue dans Wpf se rassemble à celle dans ASP.Net 
+	et ASP.Net MVC vue que la configuration de design de l&#8217;application se 
+	passe par les fichiers XAML.</p>
+
+
+
+	<p><strong>3.1) Méthode 1 : Utilisation de Fichiers Resx</strong></p>
+
+
+
+	<ul class="wp-block-list"><li>  Ajouter des fichiers
+	 de ressources pour chaque langue et leurs attribuer des noms de la 
+	mannière suivante: si le fichier s&#8217;appelle “mylanguage” alors les deux 
+	fichier de ressources auront les noms “mylanguage.resx” et 
+	“mylanguage.fr.resx”,</li></ul>
+
+
+
+	<ul class="wp-block-list"><li>  Ajouter la référence au “Namespace” des fichiers de ressources au formulaire de la mannière suivante:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+							  xmlns:myressources=&#8221;clr-namespace:MyApplications.Resources&#8221;
+							
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Utiliser le fichier de ressource pour la création des controles,exemple</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	 
+	&lt;Window x:Class=&#8221;MyApp.MainWindow&#8221;
+	<br>    xmlns=&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221</a>;
+	<br>    xmlns:x=&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221</a>;
+	<br>    xmlns:res=&#8221;clr-namespace:MyApplications .Resources&#8221;&gt;
+	<br>            &lt;Label Text=&#8221;{x:Static myressources:mylanguage.ButtonKey}&#8221;&gt;&lt;/Label&gt;
+	<br> &lt;/Window&gt;
+
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Initialiser la langue à utiliser avec la ligne suivante:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+						 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<p><strong>3.2) Méthode 2 : Utilisation de dictionnaire de ressources</strong></p>
+
+
+
+	<ul class="wp-block-list"><li>  Ajouter un fichier de dictionnaire de ressource pour chaque langue et les configurer de la mannière suivante:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	  &lt;ResourceDictionary 
+	<br>      xmlns =&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221</a>; 
+	<br>      xmlns: x=&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221</a>; 
+	<br>      xmlns: system=&#8221;clr-namespace:System;assembly=mscorlib&#8221;&gt;
+	<br>      &lt;system:String x:Key=&#8221;login&#8221;&gt;Login&lt;/system:String&gt;
+	<br>  &lt;/ResourceDictionary&gt; 
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Charger le fichier de ressource correspondant à la langue active au démarrage de l&#8217;application:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	  ResourceDictionary dictionary = new ResourceDictionary();
+	<br>    switch (Thread.CurrentThread.CurrentCulture.ToString())
+	<br>      { 
+	<br>          case &#8220;en-US&#8221;:
+	<br>            dictionary.Source = new Uri(&#8220;..\\Resources\\langues.xaml&#8221;, UriKind.Relative);
+	<br>          break;
+	<br>       case &#8220;fr&#8221;:
+	<br>            dictionary.Source = new Uri(&#8220;..\\Resources\\langues.fr.xaml&#8221;, UriKind.Relative);
+	<br>            break;
+	<br>       case &#8220;en&#8221;:
+	<br>            dictionary.Source = new Uri(&#8220;..\\Resources\\langues.en.xaml&#8221;, UriKind.Relative);
+	<br>            break;
+	<br>      }
+	<br>  this.Resources.MergedDictionaries.Add(dictionary);
+
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Configurer les controles dans le fichier XAML pour afficher la libelleé approprié,</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+							  &lt;Button 
+	x:Name=&#8221;btnLogin&#8221; Click=&#8221;btnLogin_Click&#8221; Content=&#8221;{DynamicResource 
+	login}&#8221; Grid.Row=&#8221;3&#8243; Grid.Column=&#8221;0&#8243; Padding=&#8221;10&#8243; /&gt;
+							
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Initialiser la langue à utiliser dans l&#8217;application avec la ligne suivante:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+							  Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
+							
+	</td></tr></tbody></table></figure>
+
+
+
+	<p><strong>4) Webforms</strong></p>
+
+
+
+	<ul class="wp-block-list"><li>  Créer une page .aspx,</li><li>  Afficher le dossier “App_LocalResources”  à l&#8217;application à travers le menu  “Add / Add ASP Net Folder /  App_LocalResources”,</li><li>  Créer un fichier de 
+	ressource de la page en cours pour chauque langue,ce fichier de 
+	ressource peut être crée manuellement ou bien avec Visual Studio à 
+	travers le menu “Tools”/ Generate Local Ressource”,</li><li>  Ajouter le suffixe 
+	de la langue au nom de la page, exemple si le nom de la page est 
+	“Default.aspx” et qu&#8217;on veut créer un fichier de langue pour la langue 
+	Anglais, le fichier de ressource aura le nom “Default.aspx.en.resx “ et 
+	on aura à la fin deux fichiers de ressources: Un fichier nommé 
+	“Default.aspx.resx” pour la langue par défaut et un fichier 
+	“Default.aspx.en.resx” pour la langue Anglais,</li><li> Affectation des libellés au controles de la page:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+
+	  &lt;asp: Label ID= &#8220;Age &#8221; Text= &#8220;Your Age &#8221; runat= &#8220;server &#8221; Meta: resourcekey= &#8220;LabelResource1 &#8221; /&gt;
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Ajout de code pour les validateurs:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+
+	  &lt;asp:RegularExpressionValidator
+	 ControlToValidate= &#8220;dtBirthdate &#8221; ID= &#8220;dtvalidator &#8221; ErrorMessage= 
+	&#8220;Date incorrecte &#8221; runat = &#8220;server &#8221; 
+	ValidationExpression='&lt;%Resources: RegExpValidResource.Validation 
+	%&gt;&#8217; meta:ResourceKey= &#8221; RegExpValidResource &#8221; /&gt;
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<p><strong>5) Asp.Net MVC</strong></p>
+
+
+
+	<p><strong>5.1) Méthode 1 : Utilisation de la Méthode BeginExecuteCore</strong></p>
+
+
+
+	<p>Cette méthode se base sur le surcharge de la méthode  BeginExecuteCore de la classe “Controller”.</p>
+
+
+
+	<ul class="wp-block-list"><li>  Créer une vue .cshtml,</li><li>  Afficher le dossier “App_LocalResources”  à l&#8217;application à travers le menu  “Add / Add ASP Net Folder /  App_LocalResources”,</li><li>  Ajouter des fichiers
+	 de ressource pour chaque langue à travers le menu “Add/ Ressource 
+	File”, et ajouter le suffixe de la langue à chaque fichier, exemple si 
+	l&#8217;application prend en charge la langue Anglais, on aura deux fichiers 
+	ressources: “Ressource.resx” et “Ressource.en.resx”,</li><li>  Ajouter les attributs de configuration champs au modèle utilisé dans la vue :</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+
+
+	[Display(Name=&#8221;FirstName&#8221;, ResourceType=typeof(Resource))] 
+	<br>
+	[Required(ErrorMessageResourceType = typeof(Resource), ErrorMessageResourceName = &#8220;FirstNameRequired&#8221;)]
+
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Création de classe 
+	de base pour l&#8217;héritage des controlleurs et surcharge de la méthode 
+	“BeginExecuteCore” de la classe “Controller” et Initialisation de la 
+	langue utilisé.Supposons que cette classe se nomme “MyBaseController”:</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	public class MyBaseController : Controller 
+	<br>  {
+	<br>   protected override IAsyncResult BeginExecuteCore(AsyncCallback callback, object state)
+	<br>    {
+	<br>      var cultureInfo = new CultureInfo(lang);                        
+	<br>      Thread.CurrentThread.CurrentUICulture = cultureInfo;
+	<br>      Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(cultureInfo.Name);
+	<br>      HttpCookie langCookie = new HttpCookie(&#8220;culture&#8221;, lang);
+	<br>      langCookie.Expires = DateTime.Now.AddYears(1);
+	<br>      HttpContext.Current.Response.Cookies.Add(langCookie);
+	<br>      return base.BeginExecuteCore(callback, state);
+	<br>    }
+	<br>  }
+
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Ajouter l&#8217;héritage de la classe  “MyBaseController” aux différents controlleurs de l&#8217;application.</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	public class MyBaseController : Controller 
+	<br>  {
+	<br>   public class HomeController : MyBaseController
+	<br>    {
+	<br>      public ActionResult Index()                        
+	<br>      {
+	<br>        return View();
+	<br>      };
+	<br>      public ActionResult ChangeLanguage(string lang);
+	<br>      {
+	<br>      return RedirectToAction(&#8220;Index&#8221;, &#8220;Home&#8221;);
+	<br>    }
+	<br>  }
+
+
+	</td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Ajout de code Razor à
+	 la vue, les libellé des champs seront mappés automatiquement selon les 
+	valeurs identifés dans le fichier de ressource.
+	Les champs peuvent être créers aussi en faisant le mappage directement 
+	dans la vue.
+	Exemple : le code suivant crée un bouton dont le libellé est stocké dans
+	 le fichier de ressource.</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	public class MyBaseController : Controller 
+
+
+
+	<br>  &lt;fieldset&gt;
+	<br>    &lt;legend&gt;@MvcMultilingual.Resource.Register
+	<br>       <div class="editor-label">
+	<br>	         @Html.LabelFor(model =&gt; model.FirstName)
+	<br>       </div>
+	<br>       <div class="editor-field">
+	<br>          @Html.EditorFor(model =&gt; model.FirstName)
+	<br>          @Html.ValidationMessageFor(model =&gt; model.FirstName)
+	<br>       </div>
+	<br>       &lt;p&gt;
+	<br>           &lt;input type=&#8221;submit&#8221; value=&#8221;@MvcMultilingual.Resource.Register&#8221; /&gt;
+	<br>       &lt;/p&gt;
+	<br>  &lt;/fieldset&gt;
+
+					     </td></tr></tbody></table></figure>
+
+
+
+	<ul class="wp-block-list"><li>  Ajout des liens de switch entre les langues dans la page Layout.</li></ul>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<br>  <div style="padding:5px;">
+	<br>  {
+	<br>       @Html.ActionLink(&#8220;Français&#8221;, &#8220;ChangeLanguage&#8221;, &#8220;Home&#8221;, new{lang = &#8220;fr&#8221;}, null) 
+	<br>       @Html.ActionLink(&#8220;Anglais&#8221;, &#8220;ChangeLanguage&#8221;, &#8220;Home&#8221;, new{lang = &#8220;en&#8221;}, null) 
+	<br>   }
+	<br>   </div>
+						</td></tr></tbody></table></figure>
+
+
+
+	<p><strong>5.2) Méthode 2: Utilisation de la Méthode Application_BeginRequest</strong></p>
+
+
+
+	<p>Cette méthode se base sur l&#8217;utilisation cookies et la définition de 
+	la langue dans la méthode Application_BeginRequest de fichier 
+	Global.asax.</p>
+
+
+
+	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<br>  protected void Application_BeginRequest(object sender, EventArgs e)
+	<br>  {
+	<br>           HttpCookie cookie = HttpContext.Current.Request.Cookies[&#8220;_culture&#8221;];
+	<br>           if (cookie != null &amp;&amp; cookie.Value != null)
+	<br>         {
+	<br>             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(cookie.Value);
+	<br>             System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(cookie.Value);
+	<br>         }
+	<br>         else
+	<br>         {
+	<br>              System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo(&#8220;En&#8221;);
+	<br>              System.Threading.Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(&#8220;En&#8221;);
+	<br>          }
+	<br>  }
+						</td></tr></tbody></table></figure>
+
+
+
+	<hr class="wp-block-separator" />
+
+
+
+	<p> This work is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>  </p>
+
+			
+      </div>
+    </div>
+  </div>
+ </section>
+
+  
+ </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <small>© 2025 Votre Nom. Tous droits réservés.</small>
+    </div>
+  </footer>
+  
+  <!-- Portfolio Modals (exemple pour modal 1) -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container px-4">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Projet 1</h2>
+                <p class="mt-4">Details du projet...</p>
+                <button class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Font Awesome -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+</body>
+</html>
+

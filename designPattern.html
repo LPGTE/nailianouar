@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Portfolio | Freelancer Template</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body id="page-top">
+
+  <!-- Navbar -->
+  <nav id="mainNav" class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <div class="container px-4">
+     <div id="navbarResponsive" class="collapse navbar-collapse">
+        <ul class="navbar-nav ">
+          <!-- Menu avec sous-menu -->
+          <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+	  <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       A Propos
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="lpgte.html">LPGTE</a></li>
+	      <li><a class="dropdown-item" href="auteur.html">Auteur</a></li>
+	    </ul>
+	   </li>
+	   <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       Devs
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="presentation.html">Présentation</a></li>
+	      <li><a class="dropdown-item" href="callOffice.html">CallOffice</a></li>
+	      <li><a class="dropdown-item" href="stacksNotes.html">StacksNotes</a></li>
+	      <li><a class="dropdown-item" href="textRepeaterSpeech.html">TextRepeaterSpeach</a></li>
+	    </ul>
+	   </li>
+	   <li class="nav-item dropdown">
+	    <a class="nav-link dropdown-toggle" href="#" id="portfolioDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+	       Blogs
+	    </a>
+	    <ul class="dropdown-menu" aria-labelledby="portfolioDropdown">
+	      <li><a class="dropdown-item" href="topVocabulary.html">Top Vocabulaires Utilisés</a></li>
+	      <li><a class="dropdown-item" href="IntellectualProperty.html">Les oeuvres et la propriété intellectuelle</a></li>
+	      <li><a class="dropdown-item" href="designPattern.html">Design Pattern</a></li>
+	      <li><a class="dropdown-item" href="projectManagement.html">Gestion des projets informatiques</a></li>
+	      <li><a class="dropdown-item" href="introductionHtml5.html">Introduction à Html5</a></li>
+	      <li><a class="dropdown-item" href="multiLanguageDotNet.html">Les Multi Langues en .Net</a></li>
+	    </ul>
+	   </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <a class="navbar-brand" href="#page-top">LPGTE SOFTS</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Contenu principal -->
+  <main>
+ 
+ <!-- Section Description de Profil -->
+ <section class="py-5 bg-light colorWhite" id="about">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+	<h2 class="fw-bold text-center mb-4 color1">Désign Pattern</h2>
+
+<p>Désign Pattern est une
+méthode de modélisation des solutions de développement des
+logiciels informatiques, elle est utilisé pour organiser les classes
+utilisés dans les codes sources en vue de permettre la réutilsation
+des solutions développés et la simplisité des modifications des
+besoins durant les phases de développements. Dans ce suit, une
+présentation scintétique pour la majorité des patterns utlisés
+dans le développement des logiciels informatiques.</p>
+
+
+
+<p><strong>Behavior pattern </strong>:Les
+Behavior pattern sont généralement concerné pour la communication
+entre objets.</p>
+
+
+
+<ul class="wp-block-list"><li>State Pattern: Il
+	permet de créer des objets qui réprésentent plusieurs états,
+	l&#8217;objet change son état selon les méthodes applelés 
+	
+	</li><li>Commande Pattern: La
+	requête est encapsulé dans un objet comme une commande et passé à
+	un émetteur objet,l&#8217;émtteur identifie l&#8217;objet approprié pour la
+	commande et lui passe cette commande pour l&#8217;exécuter. 
+	
+	</li><li>Strategy Pattern: Il
+	définit et encapsule une famille d&#8217;alghoprtithmes.Le programme
+	séléctionne l&#8217;un de ces alghorithmes en se basant sur la classe
+	Context. C&#8217;est un pattern qui change durant le run time.Il est
+	utilisé par exemple dans le cas de Swtich Case où les switch sont
+	remplacés par traitement des classes. 
+	
+	</li><li>Observer Pattern :Il
+	permets à une partie de système de savoir quand un évènement a
+	pris place,si un objet change d&#8217;état les autres objets dépendant
+	seront automatiquement notifés. 
+	
+</li></ul>
+
+
+
+<p><strong>Creation pattern </strong>:Les pattern
+de création concernent la création des objets,ils cachent les
+informations de création des objets.</p>
+
+
+
+<ul class="wp-block-list"><li>Factory Pattern: Le
+	factory pattern est l&#8217;un des Design pattern les plus utilisés, il
+	permets la création d&#8217;un objet sans l&#8217;éxposition de la logique de
+	création au client en se basant sur un interface commun. 
+	
+	</li><li>Abstruct Factory
+	Pattern: Il permet de Fournir une interface pour créer des objets
+	d&#8217;une même famille sans préciser leurs classes concrètes. les
+	objets sont regroupés en famille, le système doit utiliser les
+	objets d&#8217;une famille ou autre. Généralement utilisé dans la
+	création des bibliothèques pour encapsuler les méthodes du
+	programme à travers la fourniture des interfaces aux programmes
+	clients. 
+	
+	</li><li>Monteur Pattern
+	(Builder): Il sert à créer un objet complexe en utilisant des
+	simples objets et en se basant sur l&#8217;approche étate par étape. 
+	
+	</li><li>Singleton Pattern: Ce
+	pattern assure qu&#8217;il existe une instance de classe qui sera
+	accessible à travers un point d&#8217;accès global. 
+	
+</li></ul>
+
+
+
+<p><strong>Structure
+pattern</strong>: Il décrit comment des classes et des objets sont
+combinés pour former une large structure.</p>
+
+
+
+<ul class="wp-block-list"><li>Façade Pattern (Facade
+	Pattern): Il cache la complexité de système et offre un interface
+	pour le client pour accéder au système. 
+	
+	</li><li>Adaptateur Pattern
+	(Adapter Pattern): Il joue le role d&#8217;un intermédiaire entre
+	interfaces incompatibles. 
+	
+	</li><li>Pont Pattern (Bridge):
+	Le pont est utilisé pour découpler une abstraction de son
+	imlémentation pour que les deux varient indépendament. 
+	
+	</li><li>Décorateur Pattern
+	(Decorator ou Wrapper): Il permets d&#8217;ajouter des nouvelles
+	fonctionalités pour un objet existant sans modifier son structure. 
+	
+	</li><li>Proxy Pattern: Le
+	pattern Proxy réprésente une fonctionalité pour une autre
+	classe,il permet de créer un objet pour jouer l&#8217;interface d&#8217;un
+	autre objet. 
+	
+	</li><li>Composite Pattern: Le
+	composite pattern est une collection d&#8217;objets où chaque objet peut
+	être un composant ou un simple objet composé,il permet à
+	l&#8217;application cliente de traiter les objets Composants et composés
+	de la même mannière. 
+	
+</li></ul>
+
+
+
+<p><strong>MVC
+pattern</strong>: Le Mvc pattern est utilisé pour séparer les composants
+de l&#8217;application.</p>
+
+
+
+<p>Dans le lien suivant une implémentation en C# pour la majoritée des patterns utilisés, les exemples sont basés sur les cours présentés sur le site Tutorialpoint, les classes utilisés ont été modifiés pour rapprocher les patterns implémentés vers les problèmes fréquements rencontrés durant les phases de développements des logicles informatique en particuliers celles qui concernent les couchent de connexions aux bases des données.</p>
+
+
+
+<p><a href="https://github.com/LPGTE/DesignPatternDemos/blob/master/DesignPatternDemos.zip" target="_blank" rel="noreferrer noopener" aria-label=" (opens in a new tab)">Télécharger</a></p>
+
+
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+		
+		
+      </div>
+    </div>
+  </div>
+ </section>
+
+  
+ </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container text-center">
+      <small>© 2025 Votre Nom. Tous droits réservés.</small>
+    </div>
+  </footer>
+  
+  <!-- Portfolio Modals (exemple pour modal 1) -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-body text-center">
+          <div class="container px-4">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Projet 1</h2>
+                <p class="mt-4">Details du projet...</p>
+                <button class="btn btn-primary" data-bs-dismiss="modal">Fermer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS + Font Awesome -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/yourfontawesomekit.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
