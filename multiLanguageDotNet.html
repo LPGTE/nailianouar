@@ -106,7 +106,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 		
 	      string language = Properties.Settings.Default.Language;
 	<br>  language = Properties.Settings.Default.Language;
@@ -120,7 +120,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 		
 	  Application.Restart();
 		
@@ -166,7 +166,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	 
 	&lt;Window x:Class=&#8221;MyApp.MainWindow&#8221;
 	<br>    xmlns=&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221</a>;
@@ -184,7 +184,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"class=""><tbody><tr><td>
 						 Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
 
 	</td></tr></tbody></table></figure>
@@ -199,7 +199,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	  &lt;ResourceDictionary 
 	<br>      xmlns =&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml/presentation&#038;#8221</a>; 
 	<br>      xmlns: x=&#8221;<a href="http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221" rel="nofollow">http://schemas.microsoft.com/winfx/2006/xaml&#038;#8221</a>; 
@@ -215,7 +215,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	  ResourceDictionary dictionary = new ResourceDictionary();
 	<br>    switch (Thread.CurrentThread.CurrentCulture.ToString())
 	<br>      { 
@@ -240,7 +240,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 							  &lt;Button 
 	x:Name=&#8221;btnLogin&#8221; Click=&#8221;btnLogin_Click&#8221; Content=&#8221;{DynamicResource 
 	login}&#8221; Grid.Row=&#8221;3&#8243; Grid.Column=&#8221;0&#8243; Padding=&#8221;10&#8243; /&gt;
@@ -253,7 +253,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 							  Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(language);
 							
 	</td></tr></tbody></table></figure>
@@ -277,7 +277,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 
 	  &lt;asp: Label ID= &#8220;Age &#8221; Text= &#8220;Your Age &#8221; runat= &#8220;server &#8221; Meta: resourcekey= &#8220;LabelResource1 &#8221; /&gt;
 
@@ -289,7 +289,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 
 	  &lt;asp:RegularExpressionValidator
 	 ControlToValidate= &#8220;dtBirthdate &#8221; ID= &#8220;dtvalidator &#8221; ErrorMessage= 
@@ -321,7 +321,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 
 
 	[Display(Name=&#8221;FirstName&#8221;, ResourceType=typeof(Resource))] 
@@ -340,7 +340,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	public class MyBaseController : Controller 
 	<br>  {
 	<br>   protected override IAsyncResult BeginExecuteCore(AsyncCallback callback, object state)
@@ -364,7 +364,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	public class MyBaseController : Controller 
 	<br>  {
 	<br>   public class HomeController : MyBaseController
@@ -394,7 +394,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	public class MyBaseController : Controller 
 
 
@@ -421,7 +421,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	<br>  <div style="padding:5px;">
 	<br>  {
 	<br>       @Html.ActionLink(&#8220;Français&#8221;, &#8220;ChangeLanguage&#8221;, &#8220;Home&#8221;, new{lang = &#8220;fr&#8221;}, null) 
@@ -442,7 +442,7 @@
 
 
 
-	<figure class="wp-block-table"><table class=""><tbody><tr><td>
+	<figure class="wp-block-table"><table class="tableStyle1"><tbody><tr><td>
 	<br>  protected void Application_BeginRequest(object sender, EventArgs e)
 	<br>  {
 	<br>           HttpCookie cookie = HttpContext.Current.Request.Cookies[&#8220;_culture&#8221;];

@@ -18,6 +18,16 @@ main {
   flex: 1 0 auto;
 }
 
+.tableStyle1 th,
+.tableStyle1 td {
+  border-width: 1px !important;
+  border-style:solid !important;
+}
+
+.tableStyle1 td {
+  padding:5px !important;
+}
+
 .project-card {
   border: none;
   border-radius: 16px;
@@ -31,15 +41,15 @@ main {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); /* 👈 ombre encore plus forte au hover */
 }
 
-  .image-wrapper {
-    padding: 12px;
-  }
+.image-wrapper {
+ padding: 12px;
+}
 
-  .project-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+.project-image {
+ width: 100%;
+ height: auto;
+ border-radius: 8px;
+}
     
 .containerPageMargin{
   margin-top:25px !important;
