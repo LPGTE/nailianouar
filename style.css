@@ -18,6 +18,33 @@ main {
   flex: 1 0 auto;
 }
 
+.project-card {
+  border: none;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); /* 👈 ombre forte */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); /* 👈 ombre encore plus forte au hover */
+}
+
+  .image-wrapper {
+    padding: 12px;
+  }
+
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+    
+.containerPageMargin{
+  margin-top:25px !important;
+}
+
 .color1 {
   color: rgb(44, 62, 80) !important;
 }
@@ -61,7 +88,7 @@ main {
 /* Masthead */
 .masthead {
   padding: 6rem 0;
-  background-color: rgb(26, 188, 156);
+  background-color:#6F9283;
 }
 .masthead-avatar {
   width: 150px;
