@@ -9,8 +9,6 @@ Je travaille en tant que développeur fullstack, combinant un back-end performan
 - Sql Server, Mysql, Oracle
 - Git, Docker
 
-## Projets
-
 ## Contact
 - Email : anouar@example.com
 - GitHub : https://github.com/lpgte
