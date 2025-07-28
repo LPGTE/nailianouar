@@ -51,6 +51,30 @@ main {
  border-radius: 8px;
 }
     
+.project-card1 {
+  height: 200px !important;
+  border: none;
+  border-radius: 16px;
+  background-color: #ffffff;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25); /* 👈 ombre forte */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card1:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35); /* 👈 ombre encore plus forte au hover */
+}
+
+.image-wrapper1 {
+ padding: 12px;
+}
+
+.project-image1 {
+ width: 100%;
+ height: 80px !important;
+ border-radius: 8px;
+}
+       
 .containerPageMargin{
   margin-top:25px !important;
 }
