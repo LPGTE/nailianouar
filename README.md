@@ -10,6 +10,6 @@ Je travaille en tant que développeur fullstack, combinant un back-end performan
 - Git, Docker
 
 ## Contact
-- Email : anouar@example.com
+- Email : naili.anouar.pr@gmail.com
 - GitHub : https://github.com/lpgte
 - LinkedIn : https://www.linkedin.com/in/naili-anouar/
